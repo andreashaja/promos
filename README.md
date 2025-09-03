@@ -4,7 +4,7 @@ Ein Framework für konsistentere und verlässlichere Interaktionen mit Large Lan
 
 ## Überblick
 
-PROMOS (Prompt Operating System) ist ein innovatives Framework, das die grundlegenden Herausforderungen im Umgang mit großen Sprachmodellen adressiert: Inkonsistenz, Vergesslichkeit und mangelnde Nachvollziehbarkeit. Inspiriert von bewährten Betriebssystem-Konzepten, transformiert PROMOS LLMs in verlässliche, deterministische Arbeitspartner.
+PROMOS (Prompt Operating System) ist ein Framework, das grundlegende Probleme von LLMs löst: Inkonsistenz, Vergesslichkeit und mangelnde Nachvollziehbarkeit. Es nutzt Betriebssystem-Konzepte, um LLMs verlässlicher und vorhersagbarer zu machen.
 
 Die Idee zu PROMOS entstand aus der praktischen Erfahrung mit LLMs im Arbeitsalltag. Wer regelmäßig mit KI-Assistenten arbeitet, kennt die Frustration: Man erklärt dem System ausführlich Projektdetails, technische Spezifikationen oder Teamstrukturen, nur um festzustellen, dass diese Informationen nach wenigen Nachrichten wieder vergessen sind. PROMOS löst dieses Problem durch einen systematischen Ansatz, der Mechanismen klassischer Betriebssysteme auf die Welt der Sprachmodelle überträgt.
 
@@ -20,13 +20,23 @@ Moderne LLMs sind beeindruckende Werkzeuge, leiden aber unter fundamentalen Eins
 
 Diese Probleme zwingen Nutzer dazu, ständig Informationen zu wiederholen und Ergebnisse zu korrigieren - ein zeitaufwändiger Prozess, der die Effizienzgewinne durch KI-Assistenz teilweise wieder zunichte macht.
 
+## 🚀 Schnellstart
+
+Detaillierte Installationsanweisungen finden sich in der **[INSTALL.md](./INSTALL.md)**.
+
+**Systemvoraussetzungen:**
+- macOS (getestet), Linux/Windows (ungetestet, benötigt ggf. WSL)
+- Python 3.8+, Bash, Git
+- Claude Code CLI
+- Anthropic API Key
+
 ## 🏗️ Architektur
 
-PROMOS nutzt eine durchdachte Betriebssystem-Analogie, um strukturierte und vorhersagbare Interaktionen mit LLMs zu ermöglichen. Wie ein klassisches OS verwaltet PROMOS Ressourcen, koordiniert Prozesse und sorgt für konsistentes Systemverhalten. Das LLM selbst fungiert dabei als "Prozessor", während PROMOS die Steuerungsebene darüber bildet.
+PROMOS überträgt bewährte Betriebssystem-Konzepte auf LLMs. Wie ein OS verwaltet es Ressourcen, koordiniert Prozesse und sorgt für konsistentes Verhalten. Das LLM selbst ist dabei der "Prozessor", PROMOS die Steuerungsebene.
 
 ### Routing-System
 
-Das Herzstück von PROMOS ist ein intelligentes Routing-System, das Benutzeranfragen semantisch analysiert und automatisch die passenden Arbeitsanweisungen aktiviert. Statt starrer Kommandos versteht das System die Intention hinter verschiedenen Formulierungen - ob jemand "Speichere das" oder "Merk dir das" sagt, PROMOS erkennt die gewünschte Aktion.
+Das Routing-System analysiert Benutzeranfragen und aktiviert passende Arbeitsanweisungen. Es versteht verschiedene Formulierungen für dieselbe Aktion - "Speichere das" und "Merk dir das" führen zum gleichen Ergebnis.
 
 - Semantische Analyse von Benutzeranfragen
 - Automatische Aktivierung passender Prompts
@@ -65,11 +75,11 @@ Eine detaillierte Beschreibung der Konzepte, Architektur und Implementierung fin
 
 - [PROMOS - Ein Prompt-Betriebssystem für mehr Determinismus und konsistentere Ergebnisse bei der Arbeit mit LLMs](./documentation/components/promos-overview-tex/promos-overview-latex.pdf)
 
-## 🚀 Verfügbarkeit
+## 🛠️ Installation & Nutzung
 
-**Der Quellcode für PROMOS wird in Kürze veröffentlicht.**
+Der vollständige Quellcode ist nun verfügbar! Siehe **[INSTALL.md](./INSTALL.md)** für detaillierte Installationsanweisungen.
 
-Das System basiert derzeit auf Claude Code (Anthropic) für die Hook-Funktionalität, ist aber konzeptionell grundsätzlich auf andere LLM-Plattformen übertragbar. Die Veröffentlichung wird alle notwendigen Komponenten enthalten, um PROMOS in eigenen Umgebungen zu installieren und anzupassen.
+**Hinweis**: PROMOS ist eine Alpha-Version - funktionsfähig aber noch in aktiver Entwicklung. Das System basiert auf Claude Code (Anthropic) für die Hook-Funktionalität, ist aber konzeptionell auf andere LLM-Plattformen übertragbar.
 
 ## 💡 Anwendungsbeispiele
 
@@ -94,9 +104,13 @@ Prof. Dr. Andreas Haja
 andreas.haja@uni-oldenburg.de  
 [github.com/andreashaja](https://github.com/andreashaja)
 
-## 📄 Lizenz
+## 📄 Lizenz & Haftungsausschluss
 
-Die Lizenzinformationen werden mit der Codeveröffentlichung bekannt gegeben. PROMOS wird unter einer Open-Source-Lizenz veröffentlicht, die sowohl akademische als auch kommerzielle Nutzung ermöglicht.
+PROMOS wird unter der MIT-Lizenz veröffentlicht - siehe [LICENSE](./LICENSE) für Details.
+
+**HAFTUNGSAUSSCHLUSS**: Diese Software wird ohne Gewährleistung bereitgestellt. Die Nutzung erfolgt auf eigenes Risiko. Der Autor übernimmt keine Haftung für eventuelle Schäden oder Datenverluste, die durch die Nutzung dieser Software entstehen könnten.
+
+**Sicherheitshinweis**: Bewahren Sie Ihren Anthropic API Key sicher auf und committen Sie ihn niemals in ein Repository!
 
 ---
 
