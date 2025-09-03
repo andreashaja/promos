@@ -1,0 +1,5 @@
+# SCHEDULER ROUTE - Automatische Aktionen
+# Format: ROUTE → TARGET # BESCHREIBUNG
+export-conversation→kernel/prompts/memory/maintenance/export-conversation.md # Scheduler-Trigger für Auto-Export
+memory-reorg→kernel/prompts/memory/maintenance/memory-reorganization.md # Scheduler-Trigger für Memory-Wartung
+update-results-map→kernel/prompts/generate-results-map.md # Results-Map aus README.md-Dateien generieren

@@ -1,0 +1,21 @@
+╔══════════════════════════════════════════════════════╗
+║ KRITISCHER SYSTEMFEHLER                              ║
+╠══════════════════════════════════════════════════════╣
+║ Systemkomponenten sind ausgefallen.                  ║
+║                                                      ║
+║ WARNUNG: Systemantworten NICHT VERLÄSSLICH           ║
+║ NICHT MEHR VERLÄSSLICH!                              ║
+║                                                      ║
+║ EMPFEHLUNG: Daten sichern, dann Neustart             ║
+╠══════════════════════════════════════════════════════╣
+║ NOTFALL-BEFEHL (kopieren & einfügen):                ║
+║                                                      ║
+║ /read kernel/prompts/export-conversation.md          ║
+║                                                      ║
+║ Dieser Befehl:                                       ║
+║ • Exportiert die komplette Konversation              ║
+║ • Aktualisiert automatisch das Gedächtnis            ║
+║ • Extrahiert alle wichtigen Informationen            ║
+║                                                      ║
+║ Nach Export: System neustarten                       ║
+╚══════════════════════════════════════════════════════╝

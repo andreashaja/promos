@@ -1,0 +1,5 @@
+# ADMIN ROUTES - Geschützte Funktionen
+# Format: ROUTE → TARGET # BESCHREIBUNG
+add-prompt→kernel/prompts/admin/add-prompt.md # Neuen .md Prompt ins PROMOS-System einfügen
+modify-prompt→kernel/prompts/admin/modify-prompt.md # Bestehenden PROMOS-Prompt bearbeiten
+system-check→kernel/prompts/admin/system-diagnostics.md # Tiefe Systemanalyse: Routes, Prompts, Configs prüfen

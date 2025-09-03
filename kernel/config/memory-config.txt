@@ -1,0 +1,23 @@
+# MEMORY CONFIGURATION - Speicherverwaltung für PROMOS
+# Diese Datei definiert Schwellwerte und Verhalten für das Memory-System
+
+# === TOPIC CREATION ===
+TOPIC_CREATION_THRESHOLD=5         # Ab 5 Erwähnungen wird automatisch ein Topic erstellt
+TOPIC_MONITORING_THRESHOLD=3        # Ab 3 Erwähnungen in Facts-Analyse anzeigen
+
+# === UNSORTED ARCHIVING ===
+UNSORTED_MONTHLY_ARCHIVE=true      # Monatsbasierte unsorted-YYYY-MM.md Dateien
+UNSORTED_MAX_SIZE_KB=100           # Max Größe bevor neue Datei (optional)
+
+# === SHORT-TERM MEMORY ===
+# ENTFERNT - Exportierte Konversationen dienen als natürliches Kurzzeitgedächtnis
+
+# === MEMORY EXTRACTION ===
+EXTRACT_PERSONAL_INFO=true         # Persönliche Infos extrahieren (Name, Familie, etc.)
+EXTRACT_TECHNICAL_PREFS=true       # Technische Präferenzen extrahieren
+EXTRACT_PROJECT_DECISIONS=true     # Projekt-Entscheidungen extrahieren
+SKIP_GENERAL_EXPLANATIONS=true     # Allgemeine Erklärungen überspringen
+
+# === CORE MEMORY RULES ===
+CORE_5_YEAR_RULE=true              # Nur dauerhafte Präferenzen in core/preferences.md
+CORE_PREFERENCES_STRICT=true       # Strenge Trennung: Persönlichkeit vs. Technisches

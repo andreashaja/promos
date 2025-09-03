@@ -1,0 +1,22 @@
+# SYSTEM TOGGLES - Zentrale Feature-Schalter für PROMOS
+# Format: FEATURE=enabled|disabled
+# Diese Datei wird von verschiedenen System-Komponenten ausgelesen
+
+# === ROUTING SYSTEM ===
+ROUTING_ENABLED=enabled           # API-basiertes Routing via Claude Haiku
+                                  # disabled = Direkter Modus ohne Navigation
+
+# === MEMORY SYSTEM ===
+MEMORY_EXTRACTION=enabled         # Automatische Facts-Extraktion aus Konversationen
+MEMORY_MAINTENANCE=enabled        # Memory-Reorganisation und Aufräumarbeiten
+
+# === LOGGING ===
+DEBUG_LOGGING=disabled            # Erweiterte Debug-Ausgaben in logs/system.log
+                                  # enabled = Verbose logging für Fehlersuche
+
+# === EXPORT SYSTEM ===
+EXPORT_WARNINGS=enabled           # Warnungen bei hohem Message-Count
+                                  # disabled = Nur Force-Export, keine Warnungen
+
+# HINWEIS: Änderungen werden beim nächsten Hook-Aufruf aktiv
+# Betroffene Hooks: on-user-input.sh, pre-response-router-api.py

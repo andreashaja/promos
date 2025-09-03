@@ -1,0 +1,25 @@
+2# ROUTING CONFIGURATION - API-basiertes Routing-System
+# Diese Werte steuern das Verhalten des pre-response-router-api.py
+
+# === ROUTING AKTIVIERUNG ===
+ROUTING_ENABLED=true              # Master-Schalter für Routing
+                                  # false = Nur Keyword-Check für Reaktivierung
+
+# === KONFIDENZ-SCHWELLWERTE ===
+MIN_ROUTE_CONFIDENCE=0.65         # Minimale Konfidenz für automatisches Prompt-Loading
+                                  # Werte unter diesem Schwellwert führen zu Rückfragen
+                                  # Empfohlen: 0.60-0.80
+
+MIN_PROGRAM_CONFIDENCE=0.80       # Höhere Schwelle für Program-Start
+                                  # Programme sollten nur bei expliziten Anfragen gestartet werden
+                                  # Empfohlen: 0.80-0.90
+
+# === API EINSTELLUNGEN ===
+ROUTING_MODEL=claude-sonnet-4-20250514    # Modell für Routing-Entscheidungen
+                                           # Claude 4.0 Sonnet = höchste Genauigkeit für Routing
+
+# === FALLBACK VERHALTEN ===
+DEFAULT_ROUTE=direct              # Standard-Route bei niedriger Konfidenz
+FALLBACK_ON_ERROR=true           # Bei API-Fehler auf Keyword-Matching zurückfallen
+
+# HINWEIS: Änderungen werden beim nächsten Aufruf von pre-response-router-api.py aktiv

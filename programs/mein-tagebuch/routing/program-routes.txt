@@ -1,0 +1,7 @@
+# Mein Tagebuch - Program Routes
+# Diese Routes sind nur aktiv wenn das Tagebuch-Program läuft
+
+# Tagebuch-spezifische Funktionen
+new-entry→programs/mein-tagebuch/prompts/new-entry.md # "Neuer Eintrag", "Ich möchte schreiben", "Tagebucheintrag", "Heute war"
+reflect→programs/mein-tagebuch/prompts/reflect.md # "Reflektiere über", "Nachdenken über", "Tiefer verstehen"
+goals→programs/mein-tagebuch/prompts/goals.md # "Meine Ziele", "Ziel setzen", "Fortschritt", "Was will ich erreichen"

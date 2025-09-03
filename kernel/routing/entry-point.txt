@@ -1,0 +1,7 @@
+# ROUTING ENTRY POINT - Hauptkategorien für semantisches Routing
+# Format: ROUTE → TARGET # BESCHREIBUNG
+memory→kernel/routing/routes/route-memory.txt # "Merke dir", "Kannst du speichern", "Kannst du dir merken", "Speichere", "Notiere", Gedanken parken
+programs→kernel/routing/routes/route-programs.txt # Programme starten, verwalten und wechseln
+help→kernel/routing/routes/route-help.txt # Hilfe, Befehle und Systeminfos
+admin→kernel/routing/routes/route-admin.txt # System-Administration und Konfiguration
+# Keine passende Route = DIRECT (freie Diskussion ohne Schienen)

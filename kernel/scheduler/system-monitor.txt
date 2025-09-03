@@ -1,0 +1,4 @@
+# SYSTEM MONITOR - Aktueller System-Status
+# NICHT EDITIEREN - Wird vom System verwaltet
+MSG:1
+TOKENS:0

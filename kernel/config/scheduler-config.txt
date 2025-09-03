@@ -1,0 +1,42 @@
+# SCHEDULER CONFIGURATION - Zeitgesteuerte Aktionen für PROMOS
+# Format: AT:X:action oder EVERY:X:action oder AT_TOKENS:X:action
+# AT = einmalig bei Message X | EVERY = alle X Messages | AT_TOKENS = bei X Tokens
+# Kommentare mit # werden ignoriert
+#
+# HINWEIS: Diese Config wird von kernel/hooks/on-user-input.sh ausgelesen
+
+╔════════════════════════════════════════════════════════════════╗
+║              SCHEDULER KONFIGURATION                           ║
+║                                                                ║
+║  Zeitgesteuerte Aktionen für PROMOS                            ║
+║  → Entferne # zum AKTIVIEREN                                   ║
+║  → Füge # hinzu zum DEAKTIVIEREN                               ║
+╚════════════════════════════════════════════════════════════════╝
+
+# === CORE SYSTEM ===
+AT:1:load-policies                 # Lädt Policies beim Session-Start
+EVERY:10:load-policies             # Policies refresh für lange Sessions
+
+# === TOKEN MONITORING ===
+EVERY:5:estimate-tokens            # Token-Verbrauch schätzen (alle 5 Messages)
+
+# === MEMORY & EXPORT CHAIN ===
+# WICHTIG: Bei gleicher Frequenz wird die Reihenfolge von oben nach unten garantiert!
+# Beispiel: Alle EVERY:30 Actions werden in der aufgelisteten Reihenfolge ausgeführt
+
+# Export-Chain (in dieser Reihenfolge):
+EVERY:30:export-conversation       # 1. Konversation exportieren
+EVERY:30:memory-reorg              # 2. Memory reorganisieren (Facts extrahieren, sortieren)
+EVERY:30:update-results-map        # 3. Results-Map aktualisieren
+
+# === STANDALONE ACTIONS ===
+# (Momentan keine - alle Memory-Actions laufen als Chain)
+
+# === EXPORT WARNINGS (Message-basiert) ===
+AT:80:export-warn                  # Warnung nach 80 Nachrichten
+AT:150:export-force                # Zwangs-Export nach 150 Nachrichten
+
+# === TOKEN-BASIERTE EXPORT TRIGGERS ===
+# Diese haben Priorität über Message-basierte Trigger!
+AT_TOKENS:150000:export-warn       # Warnung bei 150k Tokens (75% von 200k)
+AT_TOKENS:180000:export-force      # Zwangs-Export bei 180k Tokens (90% von 200k)

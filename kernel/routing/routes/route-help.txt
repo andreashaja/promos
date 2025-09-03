@@ -1,0 +1,5 @@
+# HELP ROUTE - Sub-Routes für Help-Operationen
+# Format: ROUTE → TARGET # BESCHREIBUNG
+commands→kernel/prompts/system/show-commands.md # PROMOS-Befehle und Routes mit Beispielen zeigen
+help→kernel/prompts/system/help.md # PROMOS-Hilfe und Systemerklärung
+pause-routing→kernel/prompts/system/pause-routing.md # Routing pausieren für ungestörten Dialog

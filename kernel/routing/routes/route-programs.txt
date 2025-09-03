@@ -1,0 +1,6 @@
+# PROGRAMS ROUTE - Sub-Routes für Program-Operationen
+# Format: ROUTE → TARGET # BESCHREIBUNG
+list→kernel/prompts/programs/list-programs.md # Alle Programme mit Version aus programs/ anzeigen
+new→kernel/prompts/programs/program-setup.md # Interaktiver Wizard für neue PROMOS-Programme
+# Spezielles Pattern für direktes Program-Scanning:
+*→SCAN_PROGRAMS # "Starte [Programmname]" - automatische Programmerkennung

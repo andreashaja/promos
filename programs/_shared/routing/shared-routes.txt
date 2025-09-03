@@ -1,0 +1,12 @@
+# SHARED PROGRAM ROUTES - Verfügbar in allen aktiven Program-Contexten
+# Diese Routes werden nur geladen, wenn ein Program aktiv ist (ACTIVE_PROGRAM != 'none')
+# Format: ROUTE → TARGET # BESCHREIBUNG
+
+# === MEMORY-OPERATIONEN FÜR PROGRAMME ===
+# Normale "merke dir" Anfragen nutzen jetzt den context-aware save-to-thoughts.md
+program:shared:base-memory-write→../prompts/base-memory-write.md # Explizit im Basis-Speicher speichern # speichere im basis|basisspeicher|base memory|für alle programme
+program:shared:load-memory→../prompts/load-program-memory.md # Lädt gespeicherte Informationen aus dem Program-Memory
+program:shared:search-memory→../prompts/program-memory-search.md # Durchsucht das Program-Memory nach Informationen
+
+# === CONTEXT-MANAGEMENT ===
+program:shared:switch-to-base→../../../kernel/prompts/programs/switch-to-base.md # Wechselt zurück zum Basis-Context und beendet das aktive Programm

@@ -1,0 +1,12 @@
+# MEMORY ROUTE - Sub-Routes für Memory-Operationen
+# Format: ROUTE → TARGET # BESCHREIBUNG
+remember→kernel/prompts/memory/save/save-to-thoughts.md # "Merke dir", "Kannst du dir merken", "Merk dir das", "Erinnere dich" - temporär speichern
+save→kernel/prompts/memory/save/save-to-thoughts.md # "Speichere", "Kannst du speichern", "Speicher das", "Bitte speichern" - Speicher-Anfrage
+note→kernel/prompts/memory/save/save-to-thoughts.md # "Notiere X" oder "Denk daran" - temporäre Notiz
+export→kernel/prompts/memory/maintenance/export-conversation.md # Aktuelle Unterhaltung als Markdown exportieren
+save-core→kernel/prompts/memory/save/save-core-info.md # Fundamentale Infos (Name, Familie, Beruf) dauerhaft in core/ speichern
+review→kernel/prompts/memory/search/thought-review.md # thoughts.md Inhalt anzeigen und durchsehen
+search→kernel/prompts/memory/search/base-memory-search.md # "Durchsuche den Speicher nach X" - Memory durchsuchen
+retrieve→kernel/prompts/memory/search/retrieve-knowledge.md # Gespeichertes Wissen zu Thema abrufen
+reorganize→kernel/prompts/memory/maintenance/memory-reorganization.md # thoughts.md in topics/ strukturieren
+continue→kernel/prompts/memory/maintenance/continue-conversation.md # Letzte exportierte Konversation wiederaufnehmen

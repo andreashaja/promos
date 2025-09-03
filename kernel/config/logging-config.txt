@@ -1,0 +1,21 @@
+# LOGGING CONFIGURATION - System-weite Log-Einstellungen
+# Diese Werte steuern das Logging-Verhalten aller Hooks und Skripte
+
+# === LOG LEVEL ===
+LOG_LEVEL=INFO                   # DEBUG, INFO, WARN, ERROR
+                                 # DEBUG = Sehr detaillierte Ausgaben
+                                 # INFO = Normale Betriebsmeldungen (Standard)
+                                 # WARN = Nur Warnungen und Fehler
+                                 # ERROR = Nur kritische Fehler
+
+# === LOG ROTATION ===
+MAX_LOG_SIZE_MB=10               # Maximale Größe der system.log bevor Rotation
+MAX_LOG_BACKUPS=5                # Anzahl der Backup-Logs die behalten werden
+                                 # (system.log.1, system.log.2, etc.)
+
+# === LOG PFADE ===
+LOG_FILE=logs/system.log        # Relativer Pfad vom Projekt-Root
+                                # Logs bleiben außerhalb des Kernels!
+
+# HINWEIS: Diese Config wird von log-function.sh und rotate-logs.sh gelesen
+# Änderungen werden beim nächsten Hook-Aufruf aktiv

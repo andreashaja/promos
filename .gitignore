@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/system.log
+
+# Backup & Reset
+_backup/
+_reset/
+
+# Personal Data
+storage/conversations/*
+!storage/conversations/2025-08-29-1200-test.md
+programs/*/storage/conversations/*
+!programs/mein-tagebuch/storage/conversations/2025-08-29-1200-test.md
+
+# Temporary files
+*.tmp
+*~
+.~*
+
+# PROMOS Runtime
+programs/context-state.txt
+programs/program-list.txt
+kernel/state/metrics/*

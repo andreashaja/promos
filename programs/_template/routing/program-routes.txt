@@ -1,0 +1,18 @@
+# [PROGRAM_NAME] PROGRAM ROUTES
+# Program-spezifisches Routing-System
+
+# === CORE PROGRAM FUNCTIONS ===
+program:switch-to-base→../../../kernel/prompts/programs/switch-to-base.md
+program:base-memory-write→../../_shared/prompts/base-memory-write.md
+
+# === MEMORY OPERATIONS ===  
+# (Nutzen parameter-basierte Shared-Prompts)
+memory:generate-map→../../../kernel/prompts/memory/maintenance/generate-memory-map.md programs/[PROGRAM_NAME]/storage/memories
+memory:load→../../_shared/prompts/load-program-memory.md [PROGRAM_NAME]
+memory:search→../../_shared/prompts/program-memory-search.md [PROGRAM_NAME]
+
+# === PROGRAM-SPECIFIC ROUTES ===
+# (Hier eigene Program-Prompts einfügen)
+# Beispiel: 
+# tool:activate→../prompts/activate-tool.md
+# analysis:start→../prompts/start-analysis.md
