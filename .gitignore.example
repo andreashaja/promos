@@ -26,27 +26,12 @@ venv/
 *.log
 !logs/.gitkeep
 
-# Backup & Reset (optional - falls verwendet)
-_backup/
-_reset/
-
 # Personal Data
-storage/conversations/*
-!storage/conversations/.gitkeep
-!storage/conversations/2025-08-29-1200-test.md
-programs/*/storage/conversations/*
-!programs/*/storage/conversations/.gitkeep
-!programs/mein-tagebuch/storage/conversations/2025-08-29-1200-test.md
 
 # Temporary files
 *.tmp
 *~
 .~*
-
-# PROMOS Runtime
-programs/context-state.txt
-programs/program-list.txt
-kernel/state/metrics/*
 
 # Eigene .gitignore
 .gitignore
