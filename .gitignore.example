@@ -1,3 +1,6 @@
+# PROMOS .gitignore Template
+# Kopiere diese Datei nach .gitignore und passe sie an dein System an
+
 # macOS
 .DS_Store
 .AppleDouble
@@ -23,7 +26,7 @@ venv/
 *.log
 !logs/.gitkeep
 
-# Backup & Reset
+# Backup & Reset (optional - falls verwendet)
 _backup/
 _reset/
 
@@ -44,3 +47,6 @@ programs/*/storage/conversations/*
 programs/context-state.txt
 programs/program-list.txt
 kernel/state/metrics/*
+
+# Eigene .gitignore
+.gitignore
