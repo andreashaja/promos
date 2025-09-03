@@ -10,7 +10,7 @@ Die Idee zu PROMOS entstand aus der praktischen Erfahrung mit LLMs im Arbeitsall
 
 ## 🎯 Kernprobleme, die PROMOS löst
 
-Moderne LLMs sind beeindruckende Werkzeuge, leiden aber unter fundamentalen Einschränkungen, die ihre Zuverlässigkeit im produktiven Einsatz beeinträchtigen:
+Moderne LLMs sind beeindruckende Werkzeuge, leiden aber unter fundamentalen Einschränkungen, die ihre Zuverlässigkeit Einsatz beeinträchtigen können:
 
 - **Vergesslichkeit**: LLMs vergessen wichtige Informationen im Laufe längerer Konversationen
 - **Inkonsistenz**: Antwortqualität und Verhalten schwanken ohne erkennbares Muster
